@@ -1,0 +1,49 @@
+body{
+    background-color:lightgrey;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .navbar a:hover {
+    background: #ddd;
+    color: black;
+  }
+  
+
+header{
+    background-color:antiquewhite;
+    text-align: center;
+    padding: 130px;
+    margin: auto;
+    border-radius: 17px;
+    font-style: italic;
+    font-size: large 
+}
+.cuadro{
+    background-color: black;
+    margin: auto;
+    color: aliceblue;
+    width: 25%;
+    padding: 16%;
+    border-radius: 17px;
+    background-image: url(./foto_portfolio/fondo.jpg);
+    background-size: cover; 
+    background-position: center; 
+    }
+

@@ -1,0 +1,73 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(./Fotos_Ex3/fondo.avif);
+    background-size: cover; 
+    background-position: center; 
+}
+
+header {
+    background-color: brown;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+.main-content {
+    display: flex;
+    max-width: 90%;
+    margin: auto;
+    padding: 2%;
+}
+
+.left-column,
+.right-column {
+    flex: 1;
+}
+
+.left-column {
+    margin-right: 2%;
+    font-style: italic;
+}
+.img1 {
+    width: 100%;
+    margin-bottom: 5px;
+    margin-top: 5%;
+}
+.vid{
+    margin-top: 3%;
+}
+.right-column img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+footer {
+    margin-top: 2%;
+    background-color: brown; 
+    color: ivory;
+    padding: 10px; 
+    text-align: center;
+}
+.link{
+    margin-top: 0.5%;
+}
+/* Media Queries */
+
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column; 
+    }
+
+    .left-column,
+    .right-column {
+        margin-right: 0; /
+    }
+
+    .right-column img {
+        margin-bottom: 0; 
+    }
+}
+

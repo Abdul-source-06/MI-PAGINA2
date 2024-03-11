@@ -1,0 +1,123 @@
+.GFoto {
+    display: block;
+    width: 100%;
+    margin: auto;
+   
+position: absolute ;
+}   
+
+
+
+.TODO{
+    display: flex;
+    justify-content: space-between;
+    height: 4800px;
+}
+
+.izquierda{ 
+width: 50%;
+background-color: white;
+}
+
+.gp{
+    width: 100%;
+    padding-top: 168.85%;
+}
+.gp1{
+    width: 100%;
+}
+.gp2{
+    width: 100%;
+}
+.gp3{
+    width: 100%;
+}
+.text1{
+    font-size: medium;
+    font-style: italic;
+    text-align: center;
+}
+
+.vid{
+    font-size: xx-large;
+    text-align: right;
+    padding-top: 35%;
+    margin-bottom: 10%;
+}
+.redes-sociales img {
+    width: 10%;
+    height: 10%; 
+  
+   
+}
+
+.derecha{
+    width: 50%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 88.60%;
+
+}
+
+.text{
+    font-size: large;
+    width: 70%;
+    color: orangered;
+    margin-left: 24%;
+    padding-bottom: 3%;
+   
+}
+.linkIMG{
+    
+   
+    width: 50%;
+}
+.img{
+    width: 60%;
+    margin-left: 19%;
+}
+
+.audio{
+    padding-top: 11%;
+}
+.components{
+    color: crimson;
+    padding-top: 10%;
+}
+.Instrumentos{
+    color: crimson;
+    padding-top: 5%;
+}
+.comp, .Instru{
+    color: cadetblue;
+    font-style: italic;
+}
+
+.tabla{
+    width: 100%;
+    color: antiquewhite;
+    justify-content: center;
+   
+}
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+.vid1{
+    color: aliceblue;
+    text-align: left;
+    padding-top: 8%;
+    margin-right: 90%;
+    margin-bottom: 10%;
+}
+
+.Pobl{
+    font-size: xx-large;
+    text-align: center;
+   color: firebrick;
+   margin-top: 20%;
+}
