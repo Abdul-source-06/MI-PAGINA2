@@ -29,7 +29,7 @@ body{
 
 
 header{
- 
+
   text-align: center;
   padding: 180px;
   margin: auto;
@@ -37,9 +37,10 @@ header{
   font-style: italic;
   font-size: large 
 }
+
 .cuadro{
   color: aliceblue;
-  margin: 0;
+  margin-bottom: 10%;
   width: 80%;
   padding: 11%;
   background-image: url(./foto_portfolio/fondo2.jpeg);
@@ -47,6 +48,34 @@ header{
   background-position: left; 
 }
  
+
+
+.btn {
+  background: #7934d9;
+  background-image: -webkit-linear-gradient(top, #7934d9, #2bb89e);
+  background-image: -moz-linear-gradient(top, #7934d9, #2bb89e);
+  background-image: -ms-linear-gradient(top, #7934d9, #2bb89e);
+  background-image: -o-linear-gradient(top, #7934d9, #2bb89e);
+  background-image: linear-gradient(to bottom, #7934d9, #2bb89e);
+  -webkit-border-radius: 19;
+  -moz-border-radius: 19;
+  border-radius: 19px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 9px 18px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #b73cfa;
+  background-image: -webkit-linear-gradient(top, #b73cfa, #d98c34);
+  background-image: -moz-linear-gradient(top, #b73cfa, #d98c34);
+  background-image: -ms-linear-gradient(top, #b73cfa, #d98c34);
+  background-image: -o-linear-gradient(top, #b73cfa, #d98c34);
+  background-image: linear-gradient(to bottom, #b73cfa, #d98c34);
+  text-decoration: none;
+}
 a
 .text {
   text-align: center;
@@ -62,10 +91,135 @@ section {
   text-align: center;
   margin: 40px 0;
   padding: 20px;
-  background-color: #fff;
+  background-color: black;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #f2f2f2;
 }
-h1, h2 {
-  color: lightslategray;
+
+h2 {
+  color:cadetblue;
+}
+
+.frase1{
+  font-style: italic;
+
+}
+.h2html{
+text-align: center;
+color:black;
+}
+#treballs {
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+  padding: 30px;
+  background-color: ghostwhite;
+}
+.imatges{
+  display: flex;
+  flex-wrap: nowrap;
+  margin-left: 1%;
+}
+
+.IMG-link {
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  border-style: double;
+  border-color: rgb(95, 66, 66);
+  margin: 3%;
+  box-shadow: 10px 10px 10px 10px rgb(124, 102, 102);
+}
+.IMG-link:hover{
+  transform: scale(1.2);
+  
+}
+
+.IMG-link img {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+#gmail{
+
+  display: flex;
+  flex-wrap: nowrap;
+  text-align: center;
+  justify-content: center;
+  margin-left: 32%;
+}
+#gmail a{
+  text-decoration: none;
+}
+#gmail img{
+  margin-right: 70%;
+  width: 15%;
+  height: 80%;
+}
+#gmail img:hover {
+  transform: scale(1.2);
+}
+.frasegmail{
+  font-style: italic;
+}
+
+footer {
+  background-color: #333;
+  color: #f2f2f2;
+  padding: 15px 0;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-content {
+  text-align: center;
+}
+
+.footer-content h3 {
+  font-size: 20px;
+}
+
+.footer-content p, .footer-content a {
+  margin: 10px 0;
+  text-decoration: none;
+  color: #f2f2f2;
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  body{
+    #treballs h3{
+     font-size: 17px;
+    }
+    .imatges{
+      display: flex;
+      flex-direction: column;
+    }
+    .IMG-link{
+     margin-top: 10%;
+    }
+    .menu{
+      display: flex;
+      flex-wrap: nowrap;
+    }
+    .menu a{
+      padding: 8px 8px;
+    }
+
+    .mobile{
+      max-width: 480px;
+      margin: auto;
+
+    }
+    footer {
+      padding: 8px 0;
+    }
+  }
 }
