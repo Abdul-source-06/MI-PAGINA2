@@ -122,7 +122,7 @@ color:black;
   margin-left: 1%;
 }
 
-.IMG-link {
+.link {
   width: 300px;
   height: 200px;
   overflow: hidden;
@@ -131,12 +131,12 @@ color:black;
   margin: 3%;
   box-shadow: 10px 10px 10px 10px rgb(124, 102, 102);
 }
-.IMG-link:hover{
+.link:hover{
   transform: scale(1.2);
   
 }
 
-.IMG-link img {
+.link img {
   width: 100%;
   height: 100%;
   border: 0;
@@ -202,7 +202,7 @@ footer {
       display: flex;
       flex-direction: column;
     }
-    .IMG-link{
+    .link{
      margin-top: 10%;
     }
     .menu{
