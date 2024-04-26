@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="mole.css">
+  <title>Whac-A-Mole</title>
+</head>
+
+<body>
+
+  <h1>Punts: <span id="score">0</span></h1>
+ 
+
+  <div id="container">
+    <div>
+      <img src="./Ex4/topoNo.jpg" alt="">
+    </div>
+    <div>
+      <img src="./Ex4/topoNo.jpg" alt="">
+    </div>
+    <div>
+      <img src="./Ex4/topoNo.jpg" alt="">
+    </div>
+    <div>
+      <img src="./Ex4/topoNo.jpg" alt="">
+    </div>
+    <div>
+      <img src="./Ex4/topoNo.jpg" alt="">
+    </div>
+    <div>
+      <img src="./Ex4/topoNo.jpg" alt="">
+    </div>
+    <div>
+      <img src="./Ex4/topoNo.jpg" alt="">
+    </div>
+    <div>
+      <img src="./Ex4/topoNo.jpg" alt="">
+    </div>
+    <div>
+      <img src="./Ex4/topoNo.jpg" alt="">
+    </div>
+  </div>
+
+  <script>
+    let score = 0;
+    let topoNormal = "./Ex4/topoNo.jpg";
+  let topoActivo = "./Ex4/topoSi.jpg";
+  let topoGolpeado = "./Ex4/topoPam.jpg";
+
+
+    function showMole(mole) {
+    mole.src = "./Ex4/topoSi.jpg";
+    setTimeout(function () {
+      mole.src = "./Ex4/topoNo.jpg";
+    }, 1000);
+    }
+
+    function whackMole(event) {
+    let mole = event.target;
+    if (mole.src.includes('/topoSi.jpg')) {
+      score += 10;
+      document.getElementById('score').textContent = score;
+      let audio = new Audio('./Ex4/boing.mp3');
+      audio.play();
+      mole.src = topoGolpeado;
+    }
+  }
+
+  let moles = document.querySelectorAll('#container img');
+  moles.forEach(function(mole) {
+    mole.addEventListener('click', whackMole);
+  });
+
+  setInterval(function () {
+    let random = Math.random();
+    if (random < 0.5) {
+      let randomIndex = Math.floor(Math.random() * moles.length);
+      showMole(moles[randomIndex]);
+    }
+  }, 900); 
+  </script>
+</body>
+
+</html>
